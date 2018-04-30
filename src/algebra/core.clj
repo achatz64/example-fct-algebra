@@ -25,7 +25,6 @@
 
 
 ;; elements are lists of terms, here generated with random length between 0 and 9
-;; although term is a function with no argument it just ignores arguments and does not throw an arrity exception
 (def element (var* :element (fn [] (map (fn [x] (term))
                                         (range (rand-int 10))))))
 
